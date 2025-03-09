@@ -1,0 +1,17 @@
+{% extends 'main.html' %}
+
+
+{%block content%}
+<h1> HOME temp</h1>
+
+<div>
+    <div>
+        {% for each loop%}
+        <div>
+            <h5>{{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
+        </div>
+        {% end of loop %}
+    </div>
+</div>
+
+{% endblock content%}
