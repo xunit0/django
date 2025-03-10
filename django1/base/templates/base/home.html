@@ -6,11 +6,11 @@
 
 <div>
     <div>
-        {% for each loop%}
+        {% for room in rooms%}
         <div>
             <h5>{{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
         </div>
-        {% end of loop %}
+        {% endfor %}
     </div>
 </div>
 
